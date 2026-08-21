@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — HEIC, Photo Formats & Conversion Tips | Heic Converter</title>
+  <meta name="description" content="Guides and explainers on HEIC files, converting to JPG or PNG, and getting iPhone photos working everywhere." />
+  <link rel="canonical" href="https://heicconverter.online/blog/index.html" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="font-body text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+      <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+      Heic Converter
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1" data-nav>
+      <div class="relative" data-dropdown>
+        <button type="button" data-dropdown-btn class="nav-link flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-surface" aria-expanded="false">
+          Convert
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div data-dropdown-panel class="hidden absolute left-0 top-full mt-2 w-64 rounded-xl border border-line bg-surface shadow-xl shadow-black/30 p-2">
+          <a href="/" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/">
+            <span class="text-sm font-medium text-ink">Universal Converter</span>
+            <span class="text-xs text-inkmute">HEIC to JPG or PNG</span>
+          </a>
+          <a href="/heic-to-jpg.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-jpg.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; JPG</span>
+            <span class="text-xs text-inkmute">Smaller, universally supported</span>
+          </a>
+          <a href="/heic-to-png.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-png.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; PNG</span>
+            <span class="text-xs text-inkmute">Lossless, editing-ready</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog/index.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/blog/">Blog</a>
+      <a href="/faq.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/faq.html">FAQ</a>
+      <a href="/about.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/about.html">About</a>
+    </nav>
+
+    <a href="/#convert" class="hidden md:inline-flex btn-primary !px-5 !py-2.5 !text-xs">Convert now</a>
+
+    <button id="menuBtn" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-4">
+    <div class="border-b border-line pb-3 mb-3">
+      <button type="button" data-mobile-dropdown-btn class="w-full flex items-center justify-between py-2 text-ink font-medium" aria-expanded="false">
+        Convert
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-mobile-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div data-mobile-dropdown-panel class="hidden flex-col gap-1 pl-2 pt-1">
+        <a href="/" class="nav-link py-2">Universal Converter</a>
+        <a href="/heic-to-jpg.html" class="nav-link py-2">HEIC &rarr; JPG</a>
+        <a href="/heic-to-png.html" class="nav-link py-2">HEIC &rarr; PNG</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/blog/index.html" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="max-w-6xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-20">
+    <p class="eyebrow mb-4">Blog</p>
+    <h1 class="font-display text-4xl md:text-5xl font-semibold text-ink mb-4">Notes on HEIC & photo formats</h1>
+    <p class="text-inkmute text-lg max-w-2xl mb-12">Practical guides on why iPhones save HEIC photos, how to convert them, and which format to pick for what you're doing next.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href="/blog/what-is-heic-file-format.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">Basics</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">What Is a HEIC File? A Plain-English Explainer</h2>
+        <p class="text-sm text-inkmute leading-relaxed">Why your iPhone photos show up with a .HEIC extension, and what that actually means for you.</p>
+      </a>
+
+      <a href="/blog/how-to-convert-heic-to-jpg.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">How-to</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">How to Convert HEIC to JPG (Every Method, Compared)</h2>
+        <p class="text-sm text-inkmute leading-relaxed">From iPhone settings to browser tools — the full rundown of ways to get a JPG.</p>
+      </a>
+
+      <a href="/blog/how-to-convert-heic-to-png.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">How-to</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">How to Convert HEIC to PNG (And When You Should)</h2>
+        <p class="text-sm text-inkmute leading-relaxed">When lossless quality matters more than file size, PNG is the better call.</p>
+      </a>
+
+      <a href="/blog/heic-vs-jpg-comparison.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">Comparison</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">HEIC vs. JPG: Which Format Should You Actually Use?</h2>
+        <p class="text-sm text-inkmute leading-relaxed">Size, quality, and compatibility, side by side.</p>
+      </a>
+
+      <a href="/blog/heic-not-opening-windows.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">Troubleshooting</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">Why Won't My Windows PC Open HEIC Photos?</h2>
+        <p class="text-sm text-inkmute leading-relaxed">The real reason, and three ways to fix it today.</p>
+      </a>
+
+      <a href="/blog/convert-heic-iphone-mac-windows-android.html" class="card hover:border-ink/30 transition-colors block">
+        <p class="stamp-badge inline-block mb-3">Guide</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">Converting HEIC Photos on iPhone, Mac, Windows & Android</h2>
+        <p class="text-sm text-inkmute leading-relaxed">Device-by-device instructions for turning HEIC into something universal.</p>
+      </a>
+
+      <a href="/blog/is-it-safe-to-convert-heic-online.html" class="card hover:border-ink/30 transition-colors block md:col-span-2">
+        <p class="stamp-badge inline-block mb-3">Privacy</p>
+        <h2 class="font-display text-xl font-semibold text-ink mb-2">Is It Safe to Convert HEIC Files Online? What to Check First</h2>
+        <p class="text-sm text-inkmute leading-relaxed">Not every "free converter" handles your photos the same way. Here's what actually matters.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="col-span-2">
+      <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+        <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+        Heic Converter
+      </a>
+      <p class="text-sm text-inkmute mt-3 max-w-xs leading-relaxed">A free browser-based tool that converts iPhone HEIC photos to JPG or PNG. Nothing you upload ever leaves your device.</p>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Tools</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="nav-link">HEIC Converter</a></li>
+        <li><a href="/heic-to-jpg.html" class="nav-link">HEIC to JPG</a></li>
+        <li><a href="/heic-to-png.html" class="nav-link">HEIC to PNG</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Read</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Legal</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-inkmute">
+      <p>&copy; <span data-year></span> Heic Converter. All conversions run locally in your browser.</p>
+      <p class="font-mono">100% client-side · No uploads · No file storage</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

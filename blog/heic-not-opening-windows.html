@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Won't My Windows PC Open HEIC Photos? | Heic Converter</title>
+  <meta name="description" content="If Windows won't open your iPhone's HEIC photos, here's exactly why, plus three ways to fix it — from installing a codec to converting to JPG." />
+  <link rel="canonical" href="https://heicconverter.online/blog/heic-not-opening-windows.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Why Won't My Windows PC Open HEIC Photos?" />
+  <meta property="og:description" content="The real reason, and three ways to fix it today." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="font-body text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+      <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+      Heic Converter
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1" data-nav>
+      <div class="relative" data-dropdown>
+        <button type="button" data-dropdown-btn class="nav-link flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-surface" aria-expanded="false">
+          Convert
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div data-dropdown-panel class="hidden absolute left-0 top-full mt-2 w-64 rounded-xl border border-line bg-surface shadow-xl shadow-black/30 p-2">
+          <a href="/" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/">
+            <span class="text-sm font-medium text-ink">Universal Converter</span>
+            <span class="text-xs text-inkmute">HEIC to JPG or PNG</span>
+          </a>
+          <a href="/heic-to-jpg.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-jpg.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; JPG</span>
+            <span class="text-xs text-inkmute">Smaller, universally supported</span>
+          </a>
+          <a href="/heic-to-png.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-png.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; PNG</span>
+            <span class="text-xs text-inkmute">Lossless, editing-ready</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog/index.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/blog/">Blog</a>
+      <a href="/faq.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/faq.html">FAQ</a>
+      <a href="/about.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/about.html">About</a>
+    </nav>
+
+    <a href="/#convert" class="hidden md:inline-flex btn-primary !px-5 !py-2.5 !text-xs">Convert now</a>
+
+    <button id="menuBtn" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-4">
+    <div class="border-b border-line pb-3 mb-3">
+      <button type="button" data-mobile-dropdown-btn class="w-full flex items-center justify-between py-2 text-ink font-medium" aria-expanded="false">
+        Convert
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-mobile-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div data-mobile-dropdown-panel class="hidden flex-col gap-1 pl-2 pt-1">
+        <a href="/" class="nav-link py-2">Universal Converter</a>
+        <a href="/heic-to-jpg.html" class="nav-link py-2">HEIC &rarr; JPG</a>
+        <a href="/heic-to-png.html" class="nav-link py-2">HEIC &rarr; PNG</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/blog/index.html" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <article class="max-w-3xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-20">
+    <a href="/blog/index.html" class="text-xs font-mono text-inkmute hover:text-ink">&larr; Back to blog</a>
+    <p class="eyebrow mt-6 mb-4">Troubleshooting &middot; 6 min read</p>
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-8 leading-tight">Why Won't My Windows PC Open HEIC Photos?</h1>
+
+    <div class="prose-blog">
+      <p>You plug in your iPhone, copy over some photos, and double-click one — only for Windows to show a generic file icon and refuse to open it, or throw an error about an unsupported format. This is one of the most common HEIC complaints, and the cause is simple once you know what's going on.</p>
+
+      <h2>The short answer</h2>
+      <p>Windows doesn't include built-in support for decoding HEIC images the way it does for JPG or PNG. HEIC relies on HEVC-based compression technology that's licensed separately, so Microsoft doesn't bundle a decoder into Windows by default. Without that decoder, Windows literally doesn't know how to turn the HEIC file's data back into a viewable image.</p>
+
+      <h2>Fix 1: Install the HEIF and HEVC extensions</h2>
+      <p>Microsoft does offer the missing piece as a free download through the Microsoft Store. You'll typically need two things:</p>
+      <ol class="list-decimal pl-6 space-y-2 text-inkmute mb-5">
+        <li>Open the <strong>Microsoft Store</strong> app on your PC</li>
+        <li>Search for <strong>"HEIF Image Extensions"</strong> and install it</li>
+        <li>Search for <strong>"HEVC Video Extensions"</strong> and install it too — HEIC relies on the same underlying codec, and some systems need both</li>
+        <li>Restart the Photos app or File Explorer</li>
+      </ol>
+      <p>Once both are installed, HEIC files should open normally in the Photos app, and you'll typically see proper thumbnails in File Explorer too. This is the most complete fix if you expect to keep receiving HEIC files regularly.</p>
+      <p><strong>One catch:</strong> in some regions, Microsoft has charged a small fee for the HEVC extensions specifically, due to licensing costs, though the HEIF extension itself is usually free. If you'd rather not pay for a codec just to view a few photos, converting is the simpler route.</p>
+
+      <h2>Fix 2: Convert the photos to JPG or PNG</h2>
+      <p>If installing extensions feels like overkill for opening a handful of photos, converting them is usually faster. A browser-based tool like our <a href="/heic-to-jpg.html">HEIC to JPG converter</a> handles this without installing anything — drop the files in, and you get standard JPGs that any version of Windows can open immediately, no codec required.</p>
+      <p>This is also the better option if you're not sure the person you're sending photos to has the same extensions installed — converting before sending guarantees it'll open on their end too.</p>
+
+      <h2>Fix 3: Change your iPhone's camera settings</h2>
+      <p>If this keeps happening because you regularly transfer new photos from an iPhone to a Windows PC, you can stop the problem at the source by having your iPhone save future photos as JPG instead of HEIC:</p>
+      <ol class="list-decimal pl-6 space-y-2 text-inkmute mb-5">
+        <li>On your iPhone, open <strong>Settings &rarr; Camera &rarr; Formats</strong></li>
+        <li>Select <strong>Most Compatible</strong> instead of "High Efficiency"</li>
+      </ol>
+      <p>Keep in mind this roughly doubles the storage each new photo takes up on your phone, and it won't help with photos you've already taken — those will still need to be converted or opened with the extensions above.</p>
+
+      <h2>Why does this only happen on some Windows PCs?</h2>
+      <p>If you've noticed HEIC opens fine on one Windows computer but not another, it usually comes down to whether the HEIF/HEVC extensions happen to already be installed — sometimes bundled by the PC manufacturer, sometimes installed previously for an unrelated reason like a video app. There's no difference in the HEIC files themselves; it's entirely about what's installed on the receiving machine.</p>
+
+      <h2>What about third-party photo viewers?</h2>
+      <p>Some third-party image viewers include their own HEIC decoding built in, so you might find that a program like IrfanView (with the appropriate plugin) opens HEIC files even without Microsoft's extensions installed. This can be a convenient middle ground if you view HEIC files occasionally but don't want to rely on the Windows Photos app.</p>
+
+      <h2>Which fix should you pick?</h2>
+      <p>If you only need to open a few photos right now, convert them — it's the fastest path and doesn't require any installation. If you expect a steady stream of HEIC photos going forward (say, family members regularly send you iPhone photos), installing the free HEIF extension is worth the one-time setup. And if you're the one taking the photos and want to avoid the issue for people you send them to, switching your iPhone's camera format to JPG solves it at the source, at the cost of extra storage.</p>
+
+      <h2>Does this affect other Microsoft apps too?</h2>
+      <p>The same missing-codec issue can show up outside File Explorer and the Photos app — for example, if you try to insert a HEIC image directly into a Word document, PowerPoint slide, or Outlook email, and the codec extensions aren't installed, you may get a similarly unhelpful "can't insert this picture" error. Installing the HEIF extensions generally resolves this across all of these apps at once, since they all rely on the same underlying Windows imaging components rather than handling HEIC decoding separately.</p>
+
+      <h2>Preventing the issue going forward</h2>
+      <p>If HEIC photos are a recurring part of your workflow — say, you regularly receive them from family members or clients with iPhones — it's worth deciding once which approach fits your situation rather than troubleshooting it fresh every time. Installing the extensions is the more "set and forget" option if you're comfortable with a one-time setup step. Bookmarking a converter tool is the better fit if you use different computers often, or simply don't want to manage codecs on a machine you don't fully control, like a work laptop.</p>
+
+      <h2>Convert without installing anything</h2>
+      <p>For the fastest fix right now, our <a href="/">HEIC converter</a> turns HEIC photos into JPG or PNG directly in your browser — no codec, no download, no waiting.</p>
+    </div>
+
+    <div class="mt-12 card flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-ink font-medium">Skip the codec install entirely</p>
+      <a href="/heic-to-jpg.html" class="btn-primary">Convert HEIC to JPG</a>
+    </div>
+  </article>
+</main>
+
+<footer class="border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="col-span-2">
+      <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+        <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+        Heic Converter
+      </a>
+      <p class="text-sm text-inkmute mt-3 max-w-xs leading-relaxed">A free browser-based tool that converts iPhone HEIC photos to JPG or PNG. Nothing you upload ever leaves your device.</p>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Tools</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="nav-link">HEIC Converter</a></li>
+        <li><a href="/heic-to-jpg.html" class="nav-link">HEIC to JPG</a></li>
+        <li><a href="/heic-to-png.html" class="nav-link">HEIC to PNG</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Read</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Legal</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-inkmute">
+      <p>&copy; <span data-year></span> Heic Converter. All conversions run locally in your browser.</p>
+      <p class="font-mono">100% client-side · No uploads · No file storage</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

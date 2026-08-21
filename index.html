@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEIC to JPG & PNG Converter — Free, Private, In Your Browser | Heic Converter</title>
+  <meta name="description" content="Convert HEIC photos from your iPhone to JPG or PNG in seconds. 100% free, no uploads, no sign-up — everything runs privately in your browser." />
+  <link rel="canonical" href="https://heicconverter.online/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HEIC to JPG & PNG Converter — Heic Converter" />
+  <meta property="og:description" content="Convert HEIC photos to JPG or PNG instantly, right in your browser. Nothing is uploaded." />
+  <meta property="og:url" content="https://heicconverter.online/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="font-body text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+      <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+      Heic Converter
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1" data-nav>
+      <div class="relative" data-dropdown>
+        <button type="button" data-dropdown-btn class="nav-link flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-surface" aria-expanded="false">
+          Convert
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div data-dropdown-panel class="hidden absolute left-0 top-full mt-2 w-64 rounded-xl border border-line bg-surface shadow-xl shadow-black/30 p-2">
+          <a href="/" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/">
+            <span class="text-sm font-medium text-ink">Universal Converter</span>
+            <span class="text-xs text-inkmute">HEIC to JPG or PNG</span>
+          </a>
+          <a href="/heic-to-jpg.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-jpg.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; JPG</span>
+            <span class="text-xs text-inkmute">Smaller, universally supported</span>
+          </a>
+          <a href="/heic-to-png.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-png.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; PNG</span>
+            <span class="text-xs text-inkmute">Lossless, editing-ready</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog/index.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/blog/">Blog</a>
+      <a href="/faq.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/faq.html">FAQ</a>
+      <a href="/about.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/about.html">About</a>
+    </nav>
+
+    <a href="/#convert" class="hidden md:inline-flex btn-primary !px-5 !py-2.5 !text-xs">Convert now</a>
+
+    <button id="menuBtn" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-4">
+    <div class="border-b border-line pb-3 mb-3">
+      <button type="button" data-mobile-dropdown-btn class="w-full flex items-center justify-between py-2 text-ink font-medium" aria-expanded="false">
+        Convert
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-mobile-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div data-mobile-dropdown-panel class="hidden flex-col gap-1 pl-2 pt-1">
+        <a href="/" class="nav-link py-2">Universal Converter</a>
+        <a href="/heic-to-jpg.html" class="nav-link py-2">HEIC &rarr; JPG</a>
+        <a href="/heic-to-png.html" class="nav-link py-2">HEIC &rarr; PNG</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/blog/index.html" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <!-- HERO / CONVERTER -->
+  <section id="convert" class="max-w-6xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-16">
+    <div class="max-w-2xl">
+      <p class="eyebrow mb-4">Free &middot; Private &middot; Runs in your browser</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold leading-[1.1] text-ink">
+        Convert HEIC photos to JPG or PNG in seconds.
+      </h1>
+      <p class="mt-5 text-inkmute text-base md:text-lg leading-relaxed">
+        Drop the photos your iPhone saved as .HEIC and get back files every device, app, and website can open. No uploads, no watermarks, no waiting on a server.
+      </p>
+    </div>
+
+    <div class="mt-10 grid lg:grid-cols-[1.3fr_1fr] gap-8 items-start">
+      <!-- Ticket drop zone -->
+      <div>
+        <div id="dropZone" class="ticket px-6 py-10 md:px-10 md:py-14 transition-colors duration-200">
+          <div class="flex flex-col items-center text-center">
+            <div class="flex items-center gap-3 font-mono text-sm mb-6">
+              <span class="stamp-badge !text-ink">HEIC</span>
+              <svg width="22" height="12" viewBox="0 0 22 12" fill="none"><path d="M1 6h19M14 1l6 5-6 5" stroke="currentColor" class="text-ink" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span id="formatToggle" class="inline-flex rounded-full border border-ink/15 overflow-hidden">
+                <button type="button" data-format="jpg" class="px-3 py-1 text-xs font-mono bg-ink text-paper">JPG</button>
+                <button type="button" data-format="png" class="px-3 py-1 text-xs font-mono text-inkmute">PNG</button>
+              </span>
+            </div>
+
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="mb-4 text-inkmute" stroke="currentColor" stroke-width="1.4"><path d="M12 16V4M12 4l-4 4M12 4l4 4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            <p class="font-display font-medium text-ink">Drag & drop your HEIC photos here</p>
+            <p class="text-sm text-inkmute mt-1">or</p>
+            <button id="browseBtn" type="button" class="btn-primary mt-4">Choose files</button>
+            <input id="fileInput" type="file" accept=".heic,.heif,image/heic,image/heif" multiple class="hidden" />
+
+            <div id="qualityWrap" class="mt-8 w-full max-w-xs">
+              <div class="flex items-center justify-between text-xs font-mono text-inkmute mb-1">
+                <span>JPG quality</span>
+                <span id="qualityValue">85%</span>
+              </div>
+              <input id="qualitySlider" type="range" min="30" max="100" value="85" class="w-full accent-amber-500" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mt-4">
+          <p id="counter" class="text-xs font-mono text-inkmute">0 files converted</p>
+          <button id="downloadAll" class="hidden text-xs font-mono underline text-amber-600 hover:text-amber-500">Download all</button>
+        </div>
+
+        <div id="results" class="mt-4 space-y-3">
+          <p id="emptyState" class="text-sm text-inkmute border border-dashed border-line rounded-xl p-5 text-center">
+            Converted files will appear here, ready to download.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust strip -->
+      <aside class="card space-y-5">
+        <div>
+          <p class="stamp-badge inline-block mb-2">Why it's safe</p>
+          <p class="text-sm text-inkmute leading-relaxed">Your photos are processed entirely inside this browser tab using WebAssembly. They're never sent to a server, stored, or seen by anyone.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div>
+            <p class="font-display font-semibold text-ink">No uploads</p>
+            <p class="text-inkmute text-xs mt-1">Files stay on your device.</p>
+          </div>
+          <div>
+            <p class="font-display font-semibold text-ink">No limits</p>
+            <p class="text-inkmute text-xs mt-1">Convert as many as you like.</p>
+          </div>
+          <div>
+            <p class="font-display font-semibold text-ink">Full quality</p>
+            <p class="text-inkmute text-xs mt-1">Original resolution kept.</p>
+          </div>
+          <div>
+            <p class="font-display font-semibold text-ink">Works offline</p>
+            <p class="text-inkmute text-xs mt-1">After the page loads.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="border-t border-line bg-surface/50">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-16">
+      <p class="eyebrow mb-2">The process</p>
+      <h2 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-10">Three steps, no software to install</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <p class="font-mono text-xs text-amber-600 mb-2">01</p>
+          <h3 class="font-display font-semibold text-ink mb-2">Add your HEIC files</h3>
+          <p class="text-sm text-inkmute leading-relaxed">Drag them in from your Photos export, AirDrop folder, or camera roll backup — one file or a hundred.</p>
+        </div>
+        <div>
+          <p class="font-mono text-xs text-amber-600 mb-2">02</p>
+          <h3 class="font-display font-semibold text-ink mb-2">Pick JPG or PNG</h3>
+          <p class="text-sm text-inkmute leading-relaxed">JPG for smaller, shareable photos. PNG when you need a lossless copy or transparency support.</p>
+        </div>
+        <div>
+          <p class="font-mono text-xs text-amber-600 mb-2">03</p>
+          <h3 class="font-display font-semibold text-ink mb-2">Download the result</h3>
+          <p class="text-sm text-inkmute leading-relaxed">Grab files one at a time or all at once. That's it — no account, no email, no watermark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="max-w-6xl mx-auto px-5 md:px-8 py-16">
+    <p class="eyebrow mb-2">Built for real photo libraries</p>
+    <h2 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-10">Why people keep this tool bookmarked</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">Batch conversion</h3>
+        <p class="text-sm text-inkmute leading-relaxed">Select an entire folder of HEIC photos and convert them together instead of one by one.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">Adjustable JPG quality</h3>
+        <p class="text-sm text-inkmute leading-relaxed">Slide between smaller file sizes and maximum sharpness depending on where the photo is headed.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">Works on any device</h3>
+        <p class="text-sm text-inkmute leading-relaxed">Runs in the browser on Windows, Mac, Android, and iPhone. No app store, no install.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">Keeps original names</h3>
+        <p class="text-sm text-inkmute leading-relaxed">Converted files inherit your original filenames, just with the new extension.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">No account required</h3>
+        <p class="text-sm text-inkmute leading-relaxed">There's nothing to sign up for and nothing stored — close the tab and it's gone.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-display font-semibold text-ink mb-2">Always free</h3>
+        <p class="text-sm text-inkmute leading-relaxed">No file caps, no premium tier, no watermark on your converted images.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LONG-FORM GUIDE -->
+  <section class="max-w-4xl mx-auto px-5 md:px-8 py-16 prose-blog">
+    <p class="eyebrow mb-2">The complete guide</p>
+    <h2 class="!mt-0">Everything to know about converting HEIC photos</h2>
+    <p>If you've landed here, there's a good chance you tried to open, upload, or share a photo from your iPhone and ran into a file it wouldn't accept. That's almost always a HEIC file meeting software that doesn't recognize it yet. This guide covers what HEIC actually is, when converting makes sense, how to choose between JPG and PNG, and how this specific tool handles the job — so you're not just clicking a button, you understand what it's doing.</p>
+
+    <h3>Why iPhone photos are HEIC in the first place</h3>
+    <p>Since iOS 11, iPhones have saved photos as HEIC (High Efficiency Image Container) by default instead of the older JPG format. HEIC uses newer compression technology that stores a photo at roughly half the file size of an equivalent-quality JPG, which is a meaningful difference when your camera roll holds tens of thousands of photos. It's a sensible default for Apple's own ecosystem — the trade-off is that plenty of software outside that ecosystem, especially on Windows and older Android devices, either can't open HEIC files at all or handles them inconsistently.</p>
+
+    <h3>When you actually need to convert</h3>
+    <p>You don't need to convert every photo you take — HEIC works perfectly well within Apple's apps and services. Conversion becomes worth doing in specific situations: uploading a photo to a website or job application that rejects the .heic extension, sending a photo to someone on a Windows PC or Android phone, using an image in software that doesn't recognize HEIC, or printing at a lab that only accepts standard formats. If you're not sure whether a particular destination needs a converted file, it's usually faster to just try uploading the HEIC version first — many modern platforms handle it fine.</p>
+
+    <h3>JPG or PNG — how to actually choose</h3>
+    <p>This is the one decision this tool asks you to make, and it's simpler than it looks. <strong>Choose JPG</strong> for everyday sharing, uploading to websites, emailing, and printing — it keeps file sizes small and is supported by literally everything. <strong>Choose PNG</strong> specifically when you're about to edit the photo further, need a fully lossless archival copy, or you're placing the image into design software where compression artifacts would be more visible. PNG files typically run three to five times larger than the equivalent JPG, which is the cost of not discarding any image data during conversion. For most people converting a batch of vacation or family photos to send along, JPG is the right default. Our <a href="/blog/heic-vs-jpg-comparison.html">HEIC vs. JPG comparison</a> and <a href="/blog/how-to-convert-heic-to-png.html">HEIC to PNG guide</a> go deeper into this trade-off if you want the full picture.</p>
+
+    <h3>How this converter actually works</h3>
+    <p>Unlike a lot of "free HEIC converter" websites, this tool doesn't upload your photos anywhere. When you drop a file into the drop zone, JavaScript running inside your own browser tab decodes the HEIC image data and re-encodes it as JPG or PNG using your device's own processing power — the same way a desktop app would, just running in a tab instead of an installed program. The file never travels over the internet, which means there's no server-side storage, no account needed, and the tool keeps working even if your connection drops partway through a batch. If you want the deeper explanation of why that distinction matters, see our piece on <a href="/blog/is-it-safe-to-convert-heic-online.html">whether it's safe to convert HEIC files online</a>.</p>
+
+    <h3>Getting the best results</h3>
+    <p>A few small choices affect how your converted files turn out. If you're converting to JPG, the quality slider controls the balance between file size and sharpness — 85% is a sensible default that's visually indistinguishable from the original for most photos, but nudge it toward 100% for images you plan to print or archive, and lower it if you're optimizing for upload speed or storage. Converting in batches is fully supported: select or drag in an entire folder at once rather than repeating the process file by file. Converted files keep their original filenames (just with the new extension), so your existing folder organization carries over without extra renaming.</p>
+
+    <h3>Supported devices and browsers</h3>
+    <p>Because this runs as a website rather than an installed app, it works identically on iPhone, Android, Mac, and Windows, in any recent version of Chrome, Safari, Firefox, or Edge. There's nothing to install and no app store to visit — if you can open this page, you can convert photos on it. This also makes it a convenient option when you're on a device you don't fully control, like a work computer where installing new software isn't an option.</p>
+
+    <h3>What people usually ask next</h3>
+    <p>The most common follow-up questions are about privacy (covered above and in our <a href="/privacy-policy.html">privacy policy</a>), whether there's a limit on how many photos you can convert (there isn't — batch size is only limited by your device's available memory), and whether quality is affected (PNG conversion is lossless by definition; JPG involves a small, generally invisible amount of re-compression at the default settings). If your question isn't covered here, the <a href="/faq.html">full FAQ page</a> and <a href="/blog/index.html">blog</a> go into more specific scenarios, including device-by-device instructions and troubleshooting for when Windows won't open a HEIC file at all.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="border-t border-line bg-surface/50">
+    <div class="max-w-4xl mx-auto px-5 md:px-8 py-16">
+      <p class="eyebrow mb-2">Questions</p>
+      <h2 class="font-display text-2xl md:text-3xl font-semibold text-ink mb-8">Frequently asked</h2>
+      <div class="space-y-3">
+        <div class="border border-line rounded-xl overflow-hidden bg-surface">
+          <button data-accordion-btn class="w-full flex items-center justify-between text-left px-5 py-4 font-display font-medium text-ink">
+            What is a HEIC file?
+            <span data-accordion-icon class="text-xl text-amber-600 transition-transform">+</span>
+          </button>
+          <div data-accordion-panel class="px-5 overflow-hidden transition-[max-height] duration-300" style="max-height:0px">
+            <p class="text-sm text-inkmute pb-4 leading-relaxed">HEIC is the photo format iPhones use by default since iOS 11. It stores photos at roughly half the file size of a JPG at the same quality, but many apps, websites, and older devices can't open it directly.</p>
+          </div>
+        </div>
+        <div class="border border-line rounded-xl overflow-hidden bg-surface">
+          <button data-accordion-btn class="w-full flex items-center justify-between text-left px-5 py-4 font-display font-medium text-ink">
+            Is this converter really free?
+            <span data-accordion-icon class="text-xl text-amber-600 transition-transform">+</span>
+          </button>
+          <div data-accordion-panel class="px-5 overflow-hidden transition-[max-height] duration-300" style="max-height:0px">
+            <p class="text-sm text-inkmute pb-4 leading-relaxed">Yes. There's no file limit, no watermark, and no account needed. The tool runs entirely in your browser, so there's no server cost tied to how many photos you convert.</p>
+          </div>
+        </div>
+        <div class="border border-line rounded-xl overflow-hidden bg-surface">
+          <button data-accordion-btn class="w-full flex items-center justify-between text-left px-5 py-4 font-display font-medium text-ink">
+            Do you store or see my photos?
+            <span data-accordion-icon class="text-xl text-amber-600 transition-transform">+</span>
+          </button>
+          <div data-accordion-panel class="px-5 overflow-hidden transition-[max-height] duration-300" style="max-height:0px">
+            <p class="text-sm text-inkmute pb-4 leading-relaxed">No. Conversion happens locally using your browser's own processing power. Your files never travel over the internet, so we never have access to them.</p>
+          </div>
+        </div>
+        <div class="border border-line rounded-xl overflow-hidden bg-surface">
+          <button data-accordion-btn class="w-full flex items-center justify-between text-left px-5 py-4 font-display font-medium text-ink">
+            Should I choose JPG or PNG?
+            <span data-accordion-icon class="text-xl text-amber-600 transition-transform">+</span>
+          </button>
+          <div data-accordion-panel class="px-5 overflow-hidden transition-[max-height] duration-300" style="max-height:0px">
+            <p class="text-sm text-inkmute pb-4 leading-relaxed">JPG is smaller and works everywhere — ideal for sharing, printing, or uploading. PNG is lossless and better for screenshots, graphics, or images you plan to edit further.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="col-span-2">
+      <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+        <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+        Heic Converter
+      </a>
+      <p class="text-sm text-inkmute mt-3 max-w-xs leading-relaxed">A free browser-based tool that converts iPhone HEIC photos to JPG or PNG. Nothing you upload ever leaves your device.</p>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Tools</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="nav-link">HEIC Converter</a></li>
+        <li><a href="/heic-to-jpg.html" class="nav-link">HEIC to JPG</a></li>
+        <li><a href="/heic-to-png.html" class="nav-link">HEIC to PNG</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Read</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Legal</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-inkmute">
+      <p>&copy; <span data-year></span> Heic Converter. All conversions run locally in your browser.</p>
+      <p class="font-mono">100% client-side · No uploads · No file storage</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js" defer></script>
+<script src="/js/converter.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script defer>
+  window.addEventListener("DOMContentLoaded", function () {
+    initHeicConverter({
+      format: "auto",
+      dropZoneId: "dropZone",
+      fileInputId: "fileInput",
+      browseBtnId: "browseBtn",
+      resultsId: "results",
+      emptyStateId: "emptyState",
+      formatToggleId: "formatToggle",
+      qualityWrapId: "qualityWrap",
+      qualitySliderId: "qualitySlider",
+      qualityValueId: "qualityValue",
+      downloadAllId: "downloadAll",
+      counterId: "counter",
+    });
+  });
+</script>
+</body>
+</html>

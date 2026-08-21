@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is a HEIC File? A Plain-English Explainer | Heic Converter</title>
+  <meta name="description" content="HEIC is the photo format your iPhone uses by default. Here's what it actually is, why Apple switched to it, and when you'll want to convert it." />
+  <link rel="canonical" href="https://heicconverter.online/blog/what-is-heic-file-format.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a HEIC File? A Plain-English Explainer" />
+  <meta property="og:description" content="Why your iPhone photos show up with a .HEIC extension, and what that means for you." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="font-body text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+      <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+      Heic Converter
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1" data-nav>
+      <div class="relative" data-dropdown>
+        <button type="button" data-dropdown-btn class="nav-link flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-surface" aria-expanded="false">
+          Convert
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div data-dropdown-panel class="hidden absolute left-0 top-full mt-2 w-64 rounded-xl border border-line bg-surface shadow-xl shadow-black/30 p-2">
+          <a href="/" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/">
+            <span class="text-sm font-medium text-ink">Universal Converter</span>
+            <span class="text-xs text-inkmute">HEIC to JPG or PNG</span>
+          </a>
+          <a href="/heic-to-jpg.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-jpg.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; JPG</span>
+            <span class="text-xs text-inkmute">Smaller, universally supported</span>
+          </a>
+          <a href="/heic-to-png.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-png.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; PNG</span>
+            <span class="text-xs text-inkmute">Lossless, editing-ready</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog/index.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/blog/">Blog</a>
+      <a href="/faq.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/faq.html">FAQ</a>
+      <a href="/about.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/about.html">About</a>
+    </nav>
+
+    <a href="/#convert" class="hidden md:inline-flex btn-primary !px-5 !py-2.5 !text-xs">Convert now</a>
+
+    <button id="menuBtn" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-4">
+    <div class="border-b border-line pb-3 mb-3">
+      <button type="button" data-mobile-dropdown-btn class="w-full flex items-center justify-between py-2 text-ink font-medium" aria-expanded="false">
+        Convert
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-mobile-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div data-mobile-dropdown-panel class="hidden flex-col gap-1 pl-2 pt-1">
+        <a href="/" class="nav-link py-2">Universal Converter</a>
+        <a href="/heic-to-jpg.html" class="nav-link py-2">HEIC &rarr; JPG</a>
+        <a href="/heic-to-png.html" class="nav-link py-2">HEIC &rarr; PNG</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/blog/index.html" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <article class="max-w-3xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-20">
+    <a href="/blog/index.html" class="text-xs font-mono text-inkmute hover:text-ink">&larr; Back to blog</a>
+    <p class="eyebrow mt-6 mb-4">Basics &middot; 6 min read</p>
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-8 leading-tight">What Is a HEIC File? A Plain-English Explainer</h1>
+
+    <div class="prose-blog">
+      <p>If you've ever tried to email a photo from your iPhone and gotten a confused message back — "I can't open this file" — there's a good chance the culprit is HEIC. It's not a typo, and it's not a broken file. HEIC is simply the format your iPhone has been using to save photos since 2017, and it behaves a little differently from the JPG files most people grew up with.</p>
+
+      <p>This post explains what HEIC actually is, why Apple chose it, and how to think about when it's fine to leave a photo as HEIC versus when you should convert it to something more universal like JPG or PNG.</p>
+
+      <h2>HEIC, in one sentence</h2>
+      <p>HEIC stands for High Efficiency Image Container, and it's Apple's implementation of the HEIF (High Efficiency Image Format) standard — a way of storing photos that squeezes out more detail per megabyte than the older JPEG format most cameras and software have used for decades.</p>
+
+      <h2>Why Apple switched to it</h2>
+      <p>Before iOS 11, iPhones saved photos as JPG, the same format that's been the default for digital cameras since the 1990s. JPG works well, but it's an old format built around compression techniques that haven't fundamentally changed in a long time. As camera sensors on phones got sharper and photo libraries grew larger, storage started to matter more.</p>
+      <p>HEIC uses a modern compression method that can store a photo at roughly half the file size of an equivalent-quality JPG. For a phone that might be holding tens of thousands of photos, that adds up fast — it's a big part of why an iPhone with the same storage capacity as an older model can suddenly hold noticeably more photos and videos.</p>
+
+      <h2>What makes HEIC different, technically</h2>
+      <p>Without getting too deep into the weeds, a few things set HEIC apart from JPG:</p>
+      <ul>
+        <li><strong>Better compression:</strong> HEIC uses a newer encoding method (based on HEVC, the same family of technology used in some video compression) that preserves more detail at a smaller file size.</li>
+        <li><strong>Multiple images in one file:</strong> A single .heic file can technically hold more than one image — this is part of how Live Photos and burst shots are handled.</li>
+        <li><strong>Support for transparency and higher color depth:</strong> HEIC can store more color information than a standard JPG, which matters for HDR photos.</li>
+      </ul>
+
+      <h2>So why doesn't everything open HEIC files?</h2>
+      <p>HEIC is still a relatively newer format compared to JPG, and licensing around the underlying HEVC compression technology has made some companies slower to add support. The result is a patchwork: recent versions of Windows and macOS handle HEIC reasonably well, but plenty of websites, older software, work applications, and Android phones still expect a plain JPG or PNG and either can't open a HEIC file at all or display it as a broken image icon.</p>
+      <p>This is the single most common reason people end up needing to convert a HEIC photo — not because anything is wrong with the file, but because whatever they're trying to use it in hasn't caught up yet.</p>
+
+      <h2>When you don't need to convert</h2>
+      <p>If you're just looking at, editing, or sharing photos within Apple's own ecosystem — Photos app to Photos app, AirDrop between iPhones, iMessage — HEIC works fine and you'll never notice it's not a JPG. iOS even automatically converts HEIC to JPG in the background when you share a photo to an app or service that doesn't support HEIC, so a lot of the time this happens invisibly.</p>
+
+      <h2>When you should convert</h2>
+      <p>Conversion becomes worth doing when you run into one of these situations:</p>
+      <ul>
+        <li>Uploading a photo to a website, job application, or online form that rejects the .heic extension</li>
+        <li>Sending a photo to someone using Windows or an Android phone who reports they can't open it</li>
+        <li>Using a photo in software that doesn't recognize HEIC — some older editing tools, presentation software, or web publishing platforms</li>
+        <li>Printing at a photo kiosk or lab that only accepts JPG</li>
+      </ul>
+
+      <h2>JPG or PNG — which one?</h2>
+      <p>Once you've decided to convert, the next question is which format to convert to. As a rule of thumb: <strong>JPG</strong> is the safer default for everyday sharing, printing, and uploading, since it keeps file sizes small and is supported absolutely everywhere. <strong>PNG</strong> is worth choosing when you plan to edit the photo further, need a completely lossless copy for archiving, or you're working with design software where compression artifacts would be more noticeable. We go into more depth on that trade-off in our <a href="/blog/heic-vs-jpg-comparison.html">HEIC vs. JPG comparison</a>.</p>
+
+      <h2>How to actually convert a HEIC file</h2>
+      <p>You have a few options, ranging from changing a setting on your iPhone so future photos save as JPG automatically, to converting existing files after the fact. If you just need a handful of photos converted right now, you can drop them straight into our <a href="/">free HEIC converter</a> — it runs in your browser, so nothing gets uploaded anywhere, and you can choose JPG or PNG as the output. For a full walkthrough of every method, including changing your iPhone's camera settings so this stops happening altogether, see our guide on <a href="/blog/convert-heic-iphone-mac-windows-android.html">converting HEIC photos across iPhone, Mac, Windows, and Android</a>.</p>
+
+      <h2>The bottom line</h2>
+      <p>HEIC isn't a mistake or a problem with your phone — it's a genuinely more efficient way to store photos, and Apple's decision to switch to it as the default makes sense from a storage standpoint. The friction only shows up when a HEIC file meets software that hasn't added support for it, and in those moments, a quick conversion to JPG or PNG is the simplest fix. Once you know that's what's happening, it stops being confusing and just becomes a two-click task.</p>
+    </div>
+
+    <div class="mt-12 card flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-ink font-medium">Need to convert a HEIC file right now?</p>
+      <a href="/" class="btn-primary">Open the converter</a>
+    </div>
+  </article>
+</main>
+
+<footer class="border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="col-span-2">
+      <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+        <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+        Heic Converter
+      </a>
+      <p class="text-sm text-inkmute mt-3 max-w-xs leading-relaxed">A free browser-based tool that converts iPhone HEIC photos to JPG or PNG. Nothing you upload ever leaves your device.</p>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Tools</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="nav-link">HEIC Converter</a></li>
+        <li><a href="/heic-to-jpg.html" class="nav-link">HEIC to JPG</a></li>
+        <li><a href="/heic-to-png.html" class="nav-link">HEIC to PNG</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Read</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Legal</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-inkmute">
+      <p>&copy; <span data-year></span> Heic Converter. All conversions run locally in your browser.</p>
+      <p class="font-mono">100% client-side · No uploads · No file storage</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

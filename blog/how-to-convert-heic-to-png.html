@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Convert HEIC to PNG (And When You Should) | Heic Converter</title>
+  <meta name="description" content="A practical guide to converting HEIC photos to PNG, when lossless quality is worth the larger file size, and the fastest ways to do it." />
+  <link rel="canonical" href="https://heicconverter.online/blog/how-to-convert-heic-to-png.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Convert HEIC to PNG (And When You Should)" />
+  <meta property="og:description" content="When lossless quality matters more than file size, PNG is the better call." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="font-body text-ink antialiased">
+
+<header class="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+      <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+      Heic Converter
+    </a>
+
+    <nav class="hidden md:flex items-center gap-1" data-nav>
+      <div class="relative" data-dropdown>
+        <button type="button" data-dropdown-btn class="nav-link flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-surface" aria-expanded="false">
+          Convert
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div data-dropdown-panel class="hidden absolute left-0 top-full mt-2 w-64 rounded-xl border border-line bg-surface shadow-xl shadow-black/30 p-2">
+          <a href="/" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/">
+            <span class="text-sm font-medium text-ink">Universal Converter</span>
+            <span class="text-xs text-inkmute">HEIC to JPG or PNG</span>
+          </a>
+          <a href="/heic-to-jpg.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-jpg.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; JPG</span>
+            <span class="text-xs text-inkmute">Smaller, universally supported</span>
+          </a>
+          <a href="/heic-to-png.html" class="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-paper" data-path="/heic-to-png.html">
+            <span class="text-sm font-medium text-ink">HEIC &rarr; PNG</span>
+            <span class="text-xs text-inkmute">Lossless, editing-ready</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog/index.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/blog/">Blog</a>
+      <a href="/faq.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/faq.html">FAQ</a>
+      <a href="/about.html" class="nav-link px-3 py-2 rounded-lg hover:bg-surface" data-path="/about.html">About</a>
+    </nav>
+
+    <a href="/#convert" class="hidden md:inline-flex btn-primary !px-5 !py-2.5 !text-xs">Convert now</a>
+
+    <button id="menuBtn" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-4">
+    <div class="border-b border-line pb-3 mb-3">
+      <button type="button" data-mobile-dropdown-btn class="w-full flex items-center justify-between py-2 text-ink font-medium" aria-expanded="false">
+        Convert
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="text-inkmute transition-transform" data-mobile-dropdown-caret><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div data-mobile-dropdown-panel class="hidden flex-col gap-1 pl-2 pt-1">
+        <a href="/" class="nav-link py-2">Universal Converter</a>
+        <a href="/heic-to-jpg.html" class="nav-link py-2">HEIC &rarr; JPG</a>
+        <a href="/heic-to-png.html" class="nav-link py-2">HEIC &rarr; PNG</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/blog/index.html" class="nav-link">Blog</a>
+      <a href="/faq.html" class="nav-link">FAQ</a>
+      <a href="/about.html" class="nav-link">About</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <article class="max-w-3xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-20">
+    <a href="/blog/index.html" class="text-xs font-mono text-inkmute hover:text-ink">&larr; Back to blog</a>
+    <p class="eyebrow mt-6 mb-4">How-to &middot; 6 min read</p>
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-ink mb-8 leading-tight">How to Convert HEIC to PNG (And When You Should)</h1>
+
+    <div class="prose-blog">
+      <p>Most people converting a HEIC photo default to JPG without thinking twice, and most of the time that's the right call. But there's a specific set of situations where PNG is actually the better choice — and knowing the difference can save you from having to redo work later.</p>
+
+      <h2>Why PNG exists alongside JPG</h2>
+      <p>JPG achieves its small file sizes through "lossy" compression — it throws away some image data that the human eye is unlikely to notice, and the more you compress, the more it discards. PNG takes the opposite approach: it's a "lossless" format, meaning every pixel from the original image is preserved exactly. The trade-off is that PNG files are typically larger than a JPG of the same photo.</p>
+
+      <h2>When converting HEIC to PNG makes sense</h2>
+      <ul>
+        <li><strong>You're going to edit the photo further.</strong> Opening a photo in Photoshop, GIMP, or another editor works better from a lossless source — you're not compounding compression artifacts on top of whatever JPG compression already did.</li>
+        <li><strong>You need an archival-quality copy.</strong> If a photo matters enough that you want a permanent, exact copy, PNG guarantees nothing was thrown away during conversion.</li>
+        <li><strong>You're placing the image in a design file or print layout.</strong> Design software and desktop publishing tools often prefer lossless sources, especially if the image will be resized or manipulated.</li>
+        <li><strong>You want to avoid compounding compression.</strong> If you know the image will be re-saved as JPG again later (for instance, after editing), starting from a lossless PNG avoids double compression artifacts.</li>
+      </ul>
+
+      <h2>When PNG is probably overkill</h2>
+      <p>If you're just sending a photo to a friend, uploading it to social media, or attaching it to an email, PNG's larger file size usually isn't worth it — JPG will look effectively identical for casual viewing and upload much faster. Most social platforms and messaging apps also re-compress images anyway, so the lossless advantage of PNG gets lost in transit regardless.</p>
+
+      <h2>A common misconception: PNG and transparency</h2>
+      <p>People sometimes reach for PNG assuming it will add transparency to a photo. It won't. A normal photo from your camera roll has no transparent pixels to begin with, so converting it to PNG doesn't create any — you'll get a fully opaque image, just stored losslessly. PNG's transparency support matters for things like logos, icons, and screenshots with cut-out backgrounds, not standard photography.</p>
+
+      <h2>How to convert HEIC to PNG</h2>
+
+      <h3>The fastest way: a browser-based converter</h3>
+      <p>Our <a href="/heic-to-png.html">HEIC to PNG converter</a> handles this in a couple of clicks — drop your files in, and it converts them locally in your browser without any quality settings to fuss over, since PNG is lossless by definition. Nothing is uploaded, so it works even with sensitive or private photos.</p>
+
+      <h3>On a Mac</h3>
+      <ol class="list-decimal pl-6 space-y-2 text-inkmute mb-5">
+        <li>Open the HEIC photo in <strong>Preview</strong></li>
+        <li>Choose <strong>File &rarr; Export</strong></li>
+        <li>Select <strong>PNG</strong> from the format menu</li>
+        <li>Click <strong>Save</strong></li>
+      </ol>
+
+      <h3>On Windows</h3>
+      <p>After installing the free HEIF Image Extensions from the Microsoft Store, open the HEIC file in the Photos app and use "Save As" to export it as a PNG.</p>
+
+      <h3>Using desktop editing software</h3>
+      <p>Photoshop, Affinity Photo, GIMP, and similar tools can open HEIC files (sometimes requiring a plugin) and export as PNG with full control over the process, which is useful if you're batch-processing a large photo library.</p>
+
+      <h2>File size expectations</h2>
+      <p>Don't be surprised if a PNG converted from HEIC is three to five times larger than the equivalent JPG. This is expected — it's the cost of losing nothing during compression. If storage or upload limits are a concern, JPG at a high quality setting is usually a better balance; reserve PNG for the specific cases above where lossless quality actually matters for what you're doing next.</p>
+
+      <h2>PNG and print work</h2>
+      <p>If you're preparing a photo for a print shop or a physical product like a photo book, some print workflows specifically request PNG or TIFF over JPG to avoid compounding compression before the file goes through the print house's own processing. If your print provider doesn't specify, JPG at maximum quality is usually accepted just as well and keeps upload times shorter — but if their submission guidelines call for a lossless format, converting your HEIC photo straight to PNG saves you a step.</p>
+
+      <h2>Batch converting many HEIC files to PNG</h2>
+      <p>If you're working through a large folder rather than a single photo, doing this one file at a time in Preview or the Windows Photos app gets tedious fast. A browser-based converter that accepts multiple files at once is usually the better path for anything beyond a handful of photos — you can select an entire folder, let it process everything in sequence, and download the results individually or all at once, without repeating the export steps for every single image.</p>
+
+      <h2>What to do with the converted files</h2>
+      <p>Once you have your PNGs, it's worth thinking about where they'll live long-term. Because PNG files are larger, dropping a big batch of them into cloud storage or a shared drive will use noticeably more space than the HEIC originals did. If the goal was archiving, that's an expected and acceptable trade-off. If you were converting for a one-time editing task, consider whether you actually need to keep the PNG copies afterward, or whether the edited result (perhaps re-exported as JPG once editing is done) is the only file worth keeping long-term.</p>
+
+      <h2>Quick decision guide</h2>
+      <p>If you're not sure which to pick: default to JPG for sharing, uploading, and everyday use. Switch to PNG specifically when you're about to edit the image, need a long-term archival copy, or you're placing it into design software. Our <a href="/blog/heic-vs-jpg-comparison.html">HEIC vs. JPG comparison</a> covers this trade-off in more detail if you want the full picture.</p>
+    </div>
+
+    <div class="mt-12 card flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-ink font-medium">Need a lossless copy of your photos?</p>
+      <a href="/heic-to-png.html" class="btn-primary">Convert HEIC to PNG</a>
+    </div>
+  </article>
+</main>
+
+<footer class="border-t border-line mt-24">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+    <div class="col-span-2">
+      <a href="/" class="flex items-center gap-2 font-display font-semibold text-ink text-lg">
+        <span class="font-mono text-sm bg-ink text-paper rounded-md px-1.5 py-0.5">[H]</span>
+        Heic Converter
+      </a>
+      <p class="text-sm text-inkmute mt-3 max-w-xs leading-relaxed">A free browser-based tool that converts iPhone HEIC photos to JPG or PNG. Nothing you upload ever leaves your device.</p>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Tools</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="nav-link">HEIC Converter</a></li>
+        <li><a href="/heic-to-jpg.html" class="nav-link">HEIC to JPG</a></li>
+        <li><a href="/heic-to-png.html" class="nav-link">HEIC to PNG</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Read</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="stamp-badge inline-block mb-3">Legal</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="/terms-of-service.html" class="nav-link">Terms of Service</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-inkmute">
+      <p>&copy; <span data-year></span> Heic Converter. All conversions run locally in your browser.</p>
+      <p class="font-mono">100% client-side · No uploads · No file storage</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
