@@ -63,7 +63,7 @@
   var path = window.location.pathname;
   document.querySelectorAll("[data-nav] a[data-path]").forEach(function (a) {
     var target = a.getAttribute("data-path");
-    var match = target === "/" ? path === "/" || path === "/index.html" : path.indexOf(target) === 0;
+    var match = target === "/" ? path === "/" || path === "/index" : path.indexOf(target) === 0;
     if (match) {
       a.classList.add("text-ink", "font-semibold");
       a.classList.remove("text-inkmute");
